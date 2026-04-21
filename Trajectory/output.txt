@@ -1,0 +1,167 @@
+============================================================
+Hybrid Diffusion Typhoon Track Prediction - Training   C:\\Users\\fyp\\Desktop\\Typhoon_data_final
+============================================================
+
+[1] Loading data...
+Loaded CSV with 148228 records, 1840 unique storms
+Found 1840 storms with ERA5 data: ['1950126N09151', '1950174N19127', '1950195N17139', '1950196N21144', '1950206N22143', '1950221N19124', '1950241N23140', '1950247N15145', '1950255N14153', '1950256N14137']...
+Loading storms: 100%|████████████████████████████████████████████| 1840/1840 [00:20<00:00, 91.73it/s]
+Total loaded: 1820 storm samples (skipped 20 due to insufficient data)
+
+[2] Creating dataloaders...
+Dataset sizes - Train: 75296, Val: 1349, Test: 1439
+  Training t_future=12, Test pred_horizon=12
+
+[3] Creating model...
+Condition feature dimension: 47
+ERA5 channels: 34
+Model parameters: 3,578,595
+
+[4] Starting training...
+Config saved to checkpoints\config.json
+Training on cuda
+Train batches: 2353, Val batches: 43
+Epoch 1/100: 100%|███████████| 2353/2353 [02:57<00:00, 13.26it/s, loss=0.0021, mse=0.0013, hm=0.0078] 
+Epoch 1: Train Loss = 0.0085, Val Loss = 0.0064
+  Saved best model (val_loss: 0.0064)
+Epoch 2/100: 100%|███████████| 2353/2353 [02:58<00:00, 13.15it/s, loss=0.0182, mse=0.0178, hm=0.0039] 
+Epoch 2: Train Loss = 0.0065, Val Loss = 0.0061
+  Saved best model (val_loss: 0.0061)
+Epoch 3/100: 100%|███████████| 2353/2353 [03:10<00:00, 12.37it/s, loss=0.0182, mse=0.0180, hm=0.0029] 
+Epoch 3: Train Loss = 0.0063, Val Loss = 0.0061
+Epoch 4/100: 100%|███████████| 2353/2353 [03:09<00:00, 12.41it/s, loss=0.0009, mse=0.0007, hm=0.0024] 
+Epoch 4: Train Loss = 0.0062, Val Loss = 0.0060
+  Saved best model (val_loss: 0.0060)
+Epoch 5/100: 100%|███████████| 2353/2353 [03:16<00:00, 11.95it/s, loss=0.0012, mse=0.0008, hm=0.0036] 
+Epoch 5: Train Loss = 0.0061, Val Loss = 0.0061
+Epoch 6/100: 100%|███████████| 2353/2353 [03:17<00:00, 11.89it/s, loss=0.0183, mse=0.0182, hm=0.0020] 
+Epoch 6: Train Loss = 0.0061, Val Loss = 0.0059
+  Saved best model (val_loss: 0.0059)
+Epoch 7/100: 100%|███████████| 2353/2353 [03:17<00:00, 11.93it/s, loss=0.0009, mse=0.0007, hm=0.0015]
+Epoch 7: Train Loss = 0.0060, Val Loss = 0.0059
+Epoch 8/100: 100%|███████████| 2353/2353 [03:16<00:00, 11.97it/s, loss=0.0181, mse=0.0181, hm=0.0009] 
+Epoch 8: Train Loss = 0.0060, Val Loss = 0.0059
+  Saved best model (val_loss: 0.0059)
+Epoch 9/100: 100%|███████████| 2353/2353 [03:15<00:00, 12.05it/s, loss=0.0005, mse=0.0003, hm=0.0014] 
+Epoch 9: Train Loss = 0.0059, Val Loss = 0.0059
+Epoch 10/100: 100%|██████████| 2353/2353 [03:06<00:00, 12.60it/s, loss=0.0175, mse=0.0174, hm=0.0012] 
+Epoch 9/100: 100%|███████████| 2353/2353 [03:15<00:00, 12.05it/s, loss=0.0005, mse=0.0003, hm=0.0014] 
+Epoch 9: Train Loss = 0.0059, Val Loss = 0.0059
+Epoch 9/100: 100%|███████████| 2353/2353 [03:15<00:00, 12.05it/s, loss=0.0005, mse=0.0003, hm=0.0014] 
+Epoch 9/100: 100%|███████████| 2353/2353 [03:15<00:00, 12.05it/s, loss=0.0005, mse=0.0003, hm=0.0014] 
+Epoch 9: Train Loss = 0.0059, Val Loss = 0.0059
+Epoch 9/100: 100%|███████████| 2353/2353 [03:15<00:00, 12.05it/s, loss=0.0005, mse=0.0003, hm=0.0014] 
+Epoch 9: Train Loss = 0.0059, Val Loss = 0.0059
+Epoch 10/100: 100%|██████████| 2353/2353 [03:06<00:00, 12.60it/s, loss=0.0175, mse=0.0174, hm=0.0012] 
+Epoch 10: Train Loss = 0.0059, Val Loss = 0.0059
+Epoch 11/100: 100%|██████████| 2353/2353 [03:09<00:00, 12.43it/s, loss=0.0180, mse=0.0179, hm=0.0015] 
+Epoch 9/100: 100%|███████████| 2353/2353 [03:15<00:00, 12.05it/s, loss=0.0005, mse=0.0003, hm=0.0014] 
+Epoch 9: Train Loss = 0.0059, Val Loss = 0.0059
+Epoch 10/100: 100%|██████████| 2353/2353 [03:06<00:00, 12.60it/s, loss=0.0175, mse=0.0174, hm=0.0012] 
+Epoch 10: Train Loss = 0.0059, Val Loss = 0.0059
+Epoch 11/100: 100%|██████████| 2353/2353 [03:09<00:00, 12.43it/s, loss=0.0180, mse=0.0179, hm=0.0015] 
+Epoch 9/100: 100%|███████████| 2353/2353 [03:15<00:00, 12.05it/s, loss=0.0005, mse=0.0003, hm=0.0014] 
+Epoch 9: Train Loss = 0.0059, Val Loss = 0.0059
+Epoch 10/100: 100%|██████████| 2353/2353 [03:06<00:00, 12.60it/s, loss=0.0175, mse=0.0174, hm=0.0012] 
+Epoch 10: Train Loss = 0.0059, Val Loss = 0.0059
+Epoch 9: Train Loss = 0.0059, Val Loss = 0.0059
+Epoch 10/100: 100%|██████████| 2353/2353 [03:06<00:00, 12.60it/s, loss=0.0175, mse=0.0174, hm=0.0012] 
+Epoch 10: Train Loss = 0.0059, Val Loss = 0.0059
+Epoch 11/100: 100%|██████████| 2353/2353 [03:09<00:00, 12.43it/s, loss=0.0180, mse=0.0179, hm=0.0015] 
+Epoch 10: Train Loss = 0.0059, Val Loss = 0.0059
+Epoch 11/100: 100%|██████████| 2353/2353 [03:09<00:00, 12.43it/s, loss=0.0180, mse=0.0179, hm=0.0015] 
+Epoch 11: Train Loss = 0.0059, Val Loss = 0.0060
+Epoch 11/100: 100%|██████████| 2353/2353 [03:09<00:00, 12.43it/s, loss=0.0180, mse=0.0179, hm=0.0015] 
+Epoch 11: Train Loss = 0.0059, Val Loss = 0.0060
+Epoch 11: Train Loss = 0.0059, Val Loss = 0.0060
+Epoch 12/100: 100%|██████████| 2353/2353 [03:06<00:00, 12.60it/s, loss=0.0163, mse=0.0162, hm=0.0019] 
+Epoch 12/100: 100%|██████████| 2353/2353 [03:06<00:00, 12.60it/s, loss=0.0163, mse=0.0162, hm=0.0019] 
+Epoch 12: Train Loss = 0.0059, Val Loss = 0.0059
+Epoch 13/100: 100%|██████████| 2353/2353 [03:13<00:00, 12.15it/s, loss=0.0010, mse=0.0008, hm=0.0020] 
+Epoch 13: Train Loss = 0.0059, Val Loss = 0.0059
+Epoch 14/100: 100%|██████████| 2353/2353 [03:13<00:00, 12.18it/s, loss=0.0007, mse=0.0005, hm=0.0015] 
+Epoch 14: Train Loss = 0.0058, Val Loss = 0.0059
+Epoch 15/100: 100%|██████████| 2353/2353 [03:11<00:00, 12.27it/s, loss=0.0008, mse=0.0007, hm=0.0011] 
+Epoch 15: Train Loss = 0.0058, Val Loss = 0.0059
+Epoch 16/100: 100%|██████████| 2353/2353 [03:14<00:00, 12.12it/s, loss=0.0189, mse=0.0187, hm=0.0016] 
+Epoch 16: Train Loss = 0.0058, Val Loss = 0.0059
+Epoch 17/100: 100%|██████████| 2353/2353 [03:07<00:00, 12.53it/s, loss=0.0164, mse=0.0164, hm=0.0010] 
+Epoch 17: Train Loss = 0.0058, Val Loss = 0.0059
+Epoch 18/100: 100%|██████████| 2353/2353 [03:05<00:00, 12.69it/s, loss=0.0013, mse=0.0013, hm=0.0007] 
+Epoch 18: Train Loss = 0.0058, Val Loss = 0.0059
+Epoch 19/100: 100%|██████████| 2353/2353 [03:12<00:00, 12.19it/s, loss=0.0179, mse=0.0178, hm=0.0012] 
+Epoch 19: Train Loss = 0.0058, Val Loss = 0.0059
+Epoch 20/100: 100%|██████████| 2353/2353 [03:06<00:00, 12.60it/s, loss=0.0006, mse=0.0005, hm=0.0016] 
+Epoch 20: Train Loss = 0.0058, Val Loss = 0.0060
+Epoch 21/100: 100%|██████████| 2353/2353 [03:03<00:00, 12.79it/s, loss=0.0005, mse=0.0003, hm=0.0012] 
+Epoch 21: Train Loss = 0.0058, Val Loss = 0.0059
+Epoch 22/100: 100%|██████████| 2353/2353 [03:02<00:00, 12.87it/s, loss=0.0161, mse=0.0160, hm=0.0015] 
+Epoch 22: Train Loss = 0.0058, Val Loss = 0.0059
+Epoch 22: Train Loss = 0.0058, Val Loss = 0.0059
+Epoch 23/100: 100%|██████████| 2353/2353 [03:06<00:00, 12.64it/s, loss=0.0005, mse=0.0004, hm=0.0011] 
+Epoch 23: Train Loss = 0.0057, Val Loss = 0.0059
+Early stopping triggered! No improvement for 15 epochs.
+Loss plot saved to checkpoints\loss_curve.png
+Training complete!
+
+Epoch 22: Train Loss = 0.0058, Val Loss = 0.0059
+Epoch 23/100: 100%|██████████| 2353/2353 [03:06<00:00, 12.64it/s, loss=0.0005, mse=0.0004, hm=0.0011] 
+Epoch 23: Train Loss = 0.0057, Val Loss = 0.0059
+Early stopping triggered! No improvement for 15 epochs.
+Loss plot saved to checkpoints\loss_curve.png
+Training complete!
+Epoch 22: Train Loss = 0.0058, Val Loss = 0.0059
+Epoch 23/100: 100%|██████████| 2353/2353 [03:06<00:00, 12.64it/s, loss=0.0005, mse=0.0004, hm=0.0011] 
+Epoch 23: Train Loss = 0.0057, Val Loss = 0.0059
+Early stopping triggered! No improvement for 15 epochs.
+Loss plot saved to checkpoints\loss_curve.png
+Epoch 22: Train Loss = 0.0058, Val Loss = 0.0059
+Epoch 23/100: 100%|██████████| 2353/2353 [03:06<00:00, 12.64it/s, loss=0.0005, mse=0.0004, hm=0.0011] 
+Epoch 23: Train Loss = 0.0057, Val Loss = 0.0059
+Early stopping triggered! No improvement for 15 epochs.
+Loss plot saved to checkpoints\loss_curve.png
+Epoch 22: Train Loss = 0.0058, Val Loss = 0.0059
+Epoch 23/100: 100%|██████████| 2353/2353 [03:06<00:00, 12.64it/s, loss=0.0005, mse=0.0004, hm=0.0011] 
+Epoch 23: Train Loss = 0.0057, Val Loss = 0.0059
+Early stopping triggered! No improvement for 15 epochs.
+Loss plot saved to checkpoints\loss_curve.png
+Epoch 22: Train Loss = 0.0058, Val Loss = 0.0059
+Epoch 23/100: 100%|██████████| 2353/2353 [03:06<00:00, 12.64it/s, loss=0.0005, mse=0.0004, hm=0.0011] 
+Epoch 23: Train Loss = 0.0057, Val Loss = 0.0059
+Early stopping triggered! No improvement for 15 epochs.
+Loss plot saved to checkpoints\loss_curve.png
+Training complete!
+Epoch 23: Train Loss = 0.0057, Val Loss = 0.0059
+Early stopping triggered! No improvement for 15 epochs.
+Loss plot saved to checkpoints\loss_curve.png
+Training complete!
+Loss plot saved to checkpoints\loss_curve.png
+Training complete!
+
+[5] Evaluating on test set...
+
+[5] Evaluating on test set...
+  Test samples: 1439, Timesteps: 12
+[5] Evaluating on test set...
+  Test samples: 1439, Timesteps: 12
+  Mean Error: 465.02 km
+  Test samples: 1439, Timesteps: 12
+  Mean Error: 465.02 km
+  Error by forecast hour (MAE / RMSE, km):
+  Mean Error: 465.02 km
+  Error by forecast hour (MAE / RMSE, km):
+    +0.5h: dist 38.39/160.04 km (lat 12.11, lon 32.37), σ=155.37
+    +0.5h: dist 38.39/160.04 km (lat 12.11, lon 32.37), σ=155.37
+    +1.0h: dist 165.56/1818.80 km (lat 23.96, lon 153.72), σ=1811.26
+    +1.0h: dist 165.56/1818.80 km (lat 23.96, lon 153.72), σ=1811.26
+    +1.5h: dist 221.09/1992.70 km (lat 37.52, lon 202.87), σ=1980.40
+    +2.0h: dist 358.89/2794.34 km (lat 51.38, lon 334.50), σ=2771.20
+    +2.5h: dist 395.28/2780.10 km (lat 65.50, lon 364.61), σ=2751.86
+    +3.0h: dist 454.16/2898.82 km (lat 80.45, lon 416.27), σ=2863.02
+    +3.5h: dist 529.72/3083.25 km (lat 96.15, lon 484.19), σ=3037.40
+    +4.0h: dist 567.79/3085.04 km (lat 112.89, lon 513.89), σ=3032.34
+    +4.5h: dist 607.42/3095.51 km (lat 129.18, lon 545.59), σ=3035.33
+    +5.0h: dist 657.13/3167.33 km (lat 145.60, lon 587.81), σ=3098.42
+    +5.5h: dist 730.65/3226.64 km (lat 162.03, lon 656.30), σ=3142.83
+    +6.0h: dist 854.18/3403.19 km (lat 179.79, lon 773.19), σ=3294.25
+Config saved to checkpoints\config.json

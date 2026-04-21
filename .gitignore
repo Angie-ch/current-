@@ -1,0 +1,117 @@
+# ===========================================
+# Data directories - DO NOT COMMIT
+# ===========================================
+newtry/data/
+flow_matching/data/
+results_newtry_comparison/
+
+# Trajectory: exclude only data folders, not source code
+Trajectory/preprocessed_era5/
+Trajectory/typhoon_tracks/
+Trajectory/results/
+Trajectory/*.npy
+
+# ===========================================
+# All model checkpoints and weights
+# ===========================================
+**/checkpoints/
+**/checkpoints_*/
+**/*.pt
+**/*.pth
+**/*.ckpt
+**/*.pkl
+
+# ===========================================
+# All experiment results
+# ===========================================
+**/results/
+**/results_*/
+**/plots/
+**/eval_results/
+**/visualizations/
+**/multi_seed_results/
+**/multi_seed_results_*/
+**/z_variant_b_result/
+**/z_variant_b_200ep_result/
+**/z_variant_b_200ep_result_fm/
+**/variant_b_200ep_result/
+**/variant_b_result/
+**/baseline_results/
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.pdf
+**/*.gif
+**/*.mp4
+**/*.avi
+
+# ===========================================
+# Logs and TensorBoard
+# ===========================================
+**/*.log
+**/logs/
+**/logs_*/
+**/runs/
+**/tf-logs/
+**/event*
+
+# ===========================================
+# Python cache
+# ===========================================
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# ===========================================
+# Jupyter notebooks checkpoints
+# ===========================================
+**/.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# ===========================================
+# Cache and temp files
+# ===========================================
+**/*.npy
+**/*.npz
+**/.cache/
+**/cache/
+*.tmp
+*.temp
+*.bak
+
+# ===========================================
+# OS files
+# ===========================================
+.DS_Store
+*.swp
+*.swo
+*.lock
+._*
+
+# ===========================================
+# Environment files
+# ===========================================
+.env
+.venv/
+venv/
+requirements.txt
+
+# ===========================================
+# IDE
+# ===========================================
+.idea/
+.vscode/
+*.code-workspace
+
+# ===========================================
+# Scientific data formats
+# ===========================================
+**/*.zarr
+**/*.h5
+**/*.hdf5
+**/*.nc
+**/*.netcdf

@@ -1,0 +1,2 @@
+case_key,storm_id,aggregation,sample_count,mean_error_km,fde_6h_km,fde_12h_km,fde_18h_km,fde_24h_km,fde_30h_km,fde_36h_km,fde_42h_km,fde_48h_km,fde_54h_km,fde_60h_km,fde_66h_km,fde_72h_km
+2019322N11144::forecast_start=36,2019322N11144,oracle_per_lead_min,20,101.611,38.984,70.627,104.474,120.996,55.602,61.527,58.236,209.183,155.365,31.278,139.739,173.32

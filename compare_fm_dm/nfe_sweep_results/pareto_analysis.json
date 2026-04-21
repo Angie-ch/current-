@@ -1,0 +1,77 @@
+{
+  "baseline_dm_nfe": 50,
+  "baseline_time_ms": 96.43714939011261,
+  "baseline_rmse": 1733.0275366041396,
+  "table": [
+    {
+      "method": "FM",
+      "nfe": 1,
+      "rmse_mean": 1249.569548924764,
+      "rmse_std": 2174.5805976001766,
+      "time_ms": 13.390801497735083,
+      "time_std": 0.0,
+      "speedup_vs_dm50": 7.201745870583173,
+      "delta_rmse_vs_dm50": -483.4579876793757
+    },
+    {
+      "method": "FM",
+      "nfe": 4,
+      "rmse_mean": 1250.7743457158406,
+      "rmse_std": 2179.7704203522458,
+      "time_ms": 14.64612508425489,
+      "time_std": 0.0,
+      "speedup_vs_dm50": 6.584482164076695,
+      "delta_rmse_vs_dm50": -482.25319088829906
+    },
+    {
+      "method": "FM",
+      "nfe": 8,
+      "rmse_mean": 1251.6381963094075,
+      "rmse_std": 2180.8250207754145,
+      "time_ms": 29.020246351137757,
+      "time_std": 0.0,
+      "speedup_vs_dm50": 3.3230989228432835,
+      "delta_rmse_vs_dm50": -481.38934029473216
+    },
+    {
+      "method": "FM",
+      "nfe": 16,
+      "rmse_mean": 1249.7850117153591,
+      "rmse_std": 2175.6205711987923,
+      "time_ms": 57.86207516212016,
+      "time_std": 0.0,
+      "speedup_vs_dm50": 1.6666728443442675,
+      "delta_rmse_vs_dm50": -483.2425248887805
+    },
+    {
+      "method": "DM",
+      "nfe": 10,
+      "rmse_mean": 1733.4981689453125,
+      "rmse_std": 2990.8066436724685,
+      "time_ms": 96.7923195566982,
+      "time_std": 0.0,
+      "speedup_vs_dm50": 0.99633059556572,
+      "delta_rmse_vs_dm50": 0.470632341172859
+    },
+    {
+      "method": "DM",
+      "nfe": 25,
+      "rmse_mean": 1732.985947502984,
+      "rmse_std": 2989.919641791169,
+      "time_ms": 96.28489223541692,
+      "time_std": 0.0,
+      "speedup_vs_dm50": 1.0015813192616285,
+      "delta_rmse_vs_dm50": -0.04158910115575054
+    },
+    {
+      "method": "DM",
+      "nfe": 50,
+      "rmse_mean": 1733.0275366041396,
+      "rmse_std": 2989.287400857427,
+      "time_ms": 96.43714939011261,
+      "time_std": 0.0,
+      "speedup_vs_dm50": 1.0,
+      "delta_rmse_vs_dm50": 0.0
+    }
+  ]
+}
